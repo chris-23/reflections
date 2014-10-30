@@ -10,3 +10,7 @@ with git status you can see on which branch you are, which commit and which file
 untracked
 
 git add --> add files to staging area, with next commit these files are commited
+
+manually choose what makes sense for the next commit --> not all files should be
+commited (may some temp files or files specific for your machine)
+makes sense to only add source file, not compiled stuff
