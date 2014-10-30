@@ -1,0 +1,37 @@
+* file compare important to see errors introduced 
+* manually it's hard --> automatic tools
+* one tool: diff on command line: diff -u old_file new_file
+* graphical: kdiff3
+ 
+why vesion control?
+* history of file shows changes : --> errors introduced
+* old working versions to compare
+* team working on file: shows who made what
+
+Pros and cons of manually commit
+
+Pro:
+* User can decide when to commit, when it makes logicaly sense 
+  --> So commit is not too small and not too big
+
+Con:
+* User can forget to commit --> Commit gets to big
+* no autmatic saving : in cae of crash things can be lost
+
+ 
+Git:
+* allows saving multiple files in one commit
+--> good for projects which consist of several files depending on each other
+
+Git log:
+shows whole history of repository, all commits until today
+
+git diff id1 id2 
+shows difference between two commit --> NB: previous commit is under the commit you
+want to check
+
+with git diff --stat id1 id2 you can show some statistics
+
+by git checkout id revert to older version --> thus resetting chenages that break
+something
+--> giood for testing

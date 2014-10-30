@@ -1,0 +1,12 @@
+Git files --> hidden files
+
+Create repository: can be done locally
+
+--> in directory you want to use run git init --> creates empty directory
+
+Initialize: tells git to create an empty repository, doesnt commit anything
+
+with git status you can see on which branch you are, which commit and which files are
+untracked
+
+git add --> add files to staging area, with next commit these files are commited
