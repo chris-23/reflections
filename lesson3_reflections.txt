@@ -13,3 +13,8 @@ always works on branches, pushes all the commits reachable by branch
 git remote add --> adding new remote
 
 git remote --> see all remotes
+
+When would you want to use a remote repository rather than keeping all your work local?
+
+makes sense if people collaborate and/or you want to access your repo from differnt machines/places
+
