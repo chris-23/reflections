@@ -1,0 +1,15 @@
+Github:
+
+syncing repos between local and GitHub
+
+--> create empty repo on GitHub
+
+called remote
+
+push and pull commands:
+
+always works on branches, pushes all the commits reachable by branch
+
+git remote add --> adding new remote
+
+git remote --> see all remotes
