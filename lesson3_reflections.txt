@@ -18,3 +18,4 @@ When would you want to use a remote repository rather than keeping all your work
 
 makes sense if people collaborate and/or you want to access your repo from differnt machines/places
 
+ 
