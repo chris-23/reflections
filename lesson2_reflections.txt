@@ -14,3 +14,67 @@ git add --> add files to staging area, with next commit these files are commited
 manually choose what makes sense for the next commit --> not all files should be
 commited (may some temp files or files specific for your machine)
 makes sense to only add source file, not compiled stuff
+
+git diff (without arguments) compares working directory to staging area
+
+git diff --staged compares staging area to last commit
+
+git diff commit1 commit2 compares commit1 and commit2
+
+Staging area_make sure only one logical change
+
+--> check that you add only the file you want to staging area and check with git diff
+
+branches: branch two ways of development, for example an experimental branch for
+stuff to test
+
+to create branch: git branch experimental-mode
+--> then you also need to change to this branch:
+git checkout experimental-mode
+
+--> check with git status or git branch on which branch you are
+
+shortcut: git checkout -b experimental mode --> creates branch and check it out
+
+
+Diagrams are useful to get an overview over the whole structure: branches, commits
+and not reachable states
+
+Useful for getting an "graphical" overview:
+
+git log --graph --oneline master coins
+
+Merging:
+merge two branches: git checks older commits and adds changes from both branches
+
+Merge with master --> new master branch "merge into master"
+
+git show commit1 --> show changes compared with the parent (without having to know
+what the parent is)
+
+git merge:
+
+automatic merge new files and added functionality
+
+if not sure asks user --> conflict
+
+in the specific file there are 3 parts:
+ starting with :
+<<<<<<<<<
+HEAD your code (or to be exact the branch that is merged into)
+|||||||||
+common anchestor ( the original version before both changes happened
+=============
+changes in the branch that is merged in (often feature branch)
+>>>>>>>>>
+
+with git mergetool --tool meld
+
+--> shows 3 panes form left to right:
+* the local branch (the branch that is merged into)
+* the file itself with the git annotations
+* the remote branch (the branch that is merged in)
+
+--> click on arrow to choose the right version
+
+save and commit (commit without message --> git adds merge message)
